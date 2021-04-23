@@ -1,0 +1,40 @@
+.title {
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    background: black;
+    padding-top: 15px;
+    padding-left: 33px;
+    margin-bottom: 10px;
+  }
+  ::ng-deep.mat-dialog-container {
+    padding: 0px 5px 15px 0px !important;
+    overflow: hidden;
+  }
+  .form-box {
+    margin: 5px;
+  }
+  .req-span {
+    color: red;
+  }
+  label {
+    font-family: revert;
+  }
+  .action-btn {
+    float: right;
+    background-color: #222c3c;
+    color: white;
+    font-size: medium;
+    padding: 5px;
+    border: none;
+  }
+  .action-btn-box {
+    float: right;
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .padding_remove {
+    padding: 0px 5px;
+  }
+  

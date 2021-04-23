@@ -1,0 +1,29 @@
+<div class="container-fluid p-0 m-0"> 
+    <h3 class="course-type">All Courses</h3>          
+      <table class="table table-light table-striped">
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Duration</th>
+            <th>Fees</th>
+            <th style="width: 7%;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let course of courses">
+           <td>{{course.name}}</td>
+           <td>{{course.description}}</td>
+           <td>{{course.duration}}</td>
+           <td>{{course.fees}}</td>
+           <td><span class="material-icons"  (click)="openDialog(course.id)" style="cursor: pointer;">
+            create
+            </span>
+            <span class="material-icons">
+              delete
+              </span></td>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+    

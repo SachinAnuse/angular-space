@@ -1,0 +1,66 @@
+
+a{
+  text-decoration:none; 
+}
+.card-body{
+    height: 202px;
+}
+.box-part{
+    background:#FFF;
+    border-radius:0;;
+}
+.fa{
+     color:#4183D7;
+}
+.profile-box{
+    padding: 0;
+    height: 427px;
+    box-shadow: 5px 10px 8px #888888;
+    margin-top: 10px;
+    background:#FFF;
+}
+.profile-username-title{
+    font-size: 20px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #3a405b;
+}
+.pull-right{
+    float: right;
+}
+.list-item{
+    border-bottom: 1px solid grey;
+    padding: 13px;
+    margin: 0px 5px ;
+    text-align: left;
+}
+.page-title{
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+    margin-left: -15px;
+}
+.profile-item-block{
+    list-style-type: none;
+    padding: 0;
+}
+.profile-img-box{
+    margin-top: 30px;
+}
+.edu-ul{
+    padding: 0px 10px;
+}
+.edu-ul li{
+    margin-bottom: 5px;
+}
+.card{
+    margin: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.edit-icon{
+    color: sienna;
+    cursor: pointer;
+    font-size: 20px;
+}

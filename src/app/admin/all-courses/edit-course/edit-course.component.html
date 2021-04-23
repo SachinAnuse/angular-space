@@ -1,0 +1,104 @@
+<mat-dialog-content class="mat-typography content">
+    <div class="row">
+      <div class="col-md-12 title">
+        Course Details
+        <hr style="font-weight: bold;" />
+      </div>
+    </div>
+    <form class="row form-box" (ngSubmit)="add(addForm)" #addForm="ngForm">
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="totalExperience"
+            >Name<span class="req-span">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="totalExperience"
+            placeholder="BTech"
+            [(ngModel)]="course.name"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="companyName"
+            >Description<span class="req-span">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="companyName"
+            placeholder="BTech"
+            [(ngModel)]="course.description"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="technology"
+            >Duration<span class="req-span">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="technology"
+            placeholder="BTech"
+            [(ngModel)]="course.duration"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="domain"
+            >Fees<span class="req-span">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="domain"
+            placeholder="BTech"
+            [(ngModel)]="course.fees"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="domain"
+            >Material File<span class="req-span">*</span></label
+          >
+          <input
+            type="file"
+            class="form-control"
+            name="domain"
+            placeholder="BTech"
+            [(ngModel)]="course.material"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="domain"
+            >Syllabus Copy<span class="req-span">*</span></label
+          >
+          <input
+            type="file"
+            class="form-control"
+            name="domain"
+            placeholder="BTech"
+            [(ngModel)]="course.syllabus"
+          />
+        </div>
+      </div>
+      <div class="action-btn-box">
+        <input
+          type="submit"
+          mat-button
+          mat-dialog-close
+          class="action-btn"
+          value="ADD/UPDATE"
+        />
+      </div>
+    </form>
+  </mat-dialog-content>
+  

@@ -1,0 +1,49 @@
+<h3 class="course-type">Interested Courses</h3>
+<div class="row">
+  <div class="col-md-3" *ngFor="let course of primaryCourses">
+    <div class="card">
+      <div>
+        <img src="assets/course2.jpg" width="100%" />
+      </div>
+      <div class="card-body">
+        <span>{{course.name}}</span>
+        <p>{{course.description}}</p>
+        <button class="btn btn-success">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="course-type">Also look for</h3>
+
+<div class="row">
+  <div class="col-md-3" *ngFor="let course of secondaryCourses">
+    <div class="card">
+      <div>
+        <img src="assets/course2.jpg" width="100%" />
+      </div>
+      <div class="card-body">
+        <span>{{course.name}}</span>
+        <p>{{course.description}}</p>
+        <button class="btn btn-success">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="course-type">Hot Search</h3>
+
+<div class="row">
+  <div class="col-md-3" *ngFor="let course of generalCourses">
+    <div class="card">
+      <div>
+        <img src="assets/course2.jpg" width="100%" />
+      </div>
+      <div class="card-body">
+        <span>{{course.name}}</span>
+        <p>{{course.description}}</p>
+        <button class="btn btn-success">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>

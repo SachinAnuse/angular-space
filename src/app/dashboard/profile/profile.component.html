@@ -1,0 +1,132 @@
+<div class="page-title">
+  Student Profile
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 profile-box">
+    <div class="box-part text-center">
+      <img
+        src="assets/dp.jpg"
+        height="100px"
+        width="100px"
+        class="rounded-circle profile-img-box"
+      />
+
+      <div class="profile-username-title">
+        {{user.firstName}} {{user.lastName}}
+      </div>
+      <ul class="profile-item-block">
+        <li class="list-item">
+          <span><b>Name</b></span>
+          <span class="pull-right"> {{user.firstName}} {{user.lastName}}</span>
+        </li>
+        <li class="list-item">
+          <span><b>Phone Number</b></span>
+          <span class="pull-right">{{user.phoneNo}}</span>
+        </li>
+        <li class="list-item">
+          <span><b>Email Id</b></span>
+          <span class="pull-right">{{user.email}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-9 col-md-9 col-sm-4 col-xs-12">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p class="edu-h1">
+              <b>Educational Details</b>
+              <b style="float: right;"
+                ><span class="material-icons edit-icon" (click)="openDialog()">
+                  edit
+                </span></b
+              >
+            </p>
+            <ul class="edu-ul">
+              <li><b>Graduation : </b>
+                {{user.education.graduation}}
+                {{user.education.graduationUniversity}}
+                {{user.education.graduationPercentage}}
+                {{user.education.graduationPassingYear}}
+              </li>
+              <li><b>Post Graduation : </b>
+                {{user.education.postGraduation}}
+                {{user.education.postGraduationUniversity}}
+                {{user.education.postGraduationPercentage}}
+                {{user.education.postGraduationPassingYear}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p class="edu-h1">
+              <b>Address</b>
+              <b style="float: right;"
+              ><span class="material-icons edit-icon" (click)="openAddressDialog()">
+                edit
+              </span></b>
+            </p>
+            <ul class="edu-ul">
+              <li>
+                <b>Primary Address : </b> {{user.address.addressLine1}} {{user.address.addressLine2}}
+              </li>
+              <li><b>Secondary Address : </b>
+                {{user.address.city}} {{user.address.state}}
+                {{user.address.country}} {{user.address.postalCode}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p class="edu-h1">
+              <b>Professional Experience</b>
+              <b style="float: right;"
+              ><span class="material-icons edit-icon" (click)="openExperienceDialog()">
+                edit
+              </span></b>
+            </p>
+            <ul class="edu-ul">
+              <li><b>Experience : </b>{{user.experience.totalExperience}}</li>
+              <li><b>Company Name : </b>{{user.experience.companyName}}</li>
+              <li><b>Technology : </b>{{user.experience.technology}}</li>
+              <li><b>Domain : </b>{{user.experience.domain}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p class="edu-h1">
+              <b>Technical Interest</b>
+              <b style="float: right;"
+                ><span class="material-icons edit-icon">
+                  edit
+                </span></b
+              >
+            </p>
+            <ul class="edu-ul">
+              <li>
+                <b>Primary Interest : </b
+                >{{user.technicalInterest.primaryInterest}}
+              </li>
+              <li>
+                <b>Secondary Interest : </b
+                >{{user.technicalInterest.secondaryInterest}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

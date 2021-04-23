@@ -1,0 +1,75 @@
+<mat-dialog-content class="mat-typography content">
+  <div class="row">
+    <div class="col-md-12 title">
+      Professional Details
+      <hr style="font-weight: bold;" />
+    </div>
+  </div>
+  <form class="row form-box" (ngSubmit)="add(addForm)" #addForm="ngForm">
+    <div class="col-md-12 padding_remove">
+      <div class="form-group">
+        <label for="totalExperience"
+          >Total Experience<span class="req-span">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="totalExperience"
+          placeholder="experience"
+          [(ngModel)]="experience.totalExperience"
+        />
+      </div>
+    </div>
+    <div class="col-md-12 padding_remove">
+      <div class="form-group">
+        <label for="companyName"
+          >Company Name<span class="req-span">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="companyName"
+          placeholder="Veracity"
+          [(ngModel)]="experience.companyName"
+        />
+      </div>
+    </div>
+    <div class="col-md-12 padding_remove">
+      <div class="form-group">
+        <label for="technology"
+          >Technology<span class="req-span">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="technology"
+          placeholder="technology"
+          [(ngModel)]="experience.technology"
+        />
+      </div>
+    </div>
+    <div class="col-md-12 padding_remove">
+      <div class="form-group">
+        <label for="domain"
+          >Domain<span class="req-span">*</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="domain"
+          placeholder="banking"
+          [(ngModel)]="experience.domain"
+        />
+      </div>
+    </div>
+    <div class="action-btn-box">
+      <input
+        type="submit"
+        mat-button
+        mat-dialog-close
+        class="action-btn"
+        value="ADD/UPDATE"
+      />
+    </div>
+  </form>
+</mat-dialog-content>

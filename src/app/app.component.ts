@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sptiPortal';
+  title = 'An app explaining angular router and router duard';
 }

@@ -1,0 +1,64 @@
+<mat-dialog-content class="mat-typography content">
+    <div class="row">
+        <div class="col-md-12 title">
+            Educational Details
+            <hr style="font-weight: bold;">
+        </div>
+    </div>
+  <form class="row form-box"  (ngSubmit)="add(addForm)" #addForm="ngForm">
+    <div class="col-md-6 padding_remove">
+      <div class="form-group">
+        <label for="graduation">Graduation<span class="req-span">*</span></label>
+        <input type="text" class="form-control" name="graduation" placeholder="BTech" [(ngModel)]="education.graduation"/>
+      </div>
+    </div>
+    <div class="col-md-6 padding_remove">
+      <div class="form-group">
+        <label for="university">University<span class="req-span">*</span></label>
+        <input type="text" class="form-control" name="graduation_university" placeholder="pune" [(ngModel)]="education.graduationUniversity"/>
+      </div>
+    </div>
+
+    <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="percentage">Percentage<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="graduation_percentage" placeholder="70.67%" [(ngModel)]="education.graduationPercentage"/>
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="passing_year">Passing year<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="graduation_passing_year" placeholder="2020" [(ngModel)]="education.graduationPassingYear"/>
+        </div>
+      </div>
+
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="graduation">Post Graduation<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="post_graduation" placeholder="MS" [(ngModel)]="education.postGraduation"/>
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="university">University<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="post_graduation_university" placeholder="Mumbai" [(ngModel)]="education.postGraduationUniversity"/>
+        </div>
+      </div>
+
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="percentage">Percentage<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="post_graduation_percentage" placeholder="78%" [(ngModel)]="education.postGraduationPercentage"/>
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="passing_year">Passing year<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="post_graduation_passing_year" placeholder="2021" [(ngModel)]="education.postGraduationPassingYear"/>
+        </div>
+      </div>
+      <div class="action-btn-box">
+        <input type="submit" mat-button mat-dialog-close class="action-btn" value="ADD/UPDATE">
+      </div>
+      </form>
+</mat-dialog-content>

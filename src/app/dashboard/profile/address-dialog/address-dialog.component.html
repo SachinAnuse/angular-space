@@ -1,0 +1,52 @@
+<mat-dialog-content class="mat-typography content">
+    <div class="row">
+        <div class="col-md-12 title">
+            Address Details
+            <hr style="font-weight: bold;">
+        </div>
+    </div>
+  <form class="row form-box"  (ngSubmit)="add(addForm)" #addForm="ngForm">
+    <div class="col-md-6 padding_remove">
+      <div class="form-group">
+        <label for="addressLine1">Address Line1<span class="req-span">*</span></label>
+        <input type="text" class="form-control" name="addressLine1" placeholder="MG road.." [(ngModel)]="address.addressLine1"/>
+      </div>
+    </div>
+    <div class="col-md-6 padding_remove">
+      <div class="form-group">
+        <label for="addressLine2">Address Line2<span class="req-span">*</span></label>
+        <input type="text" class="form-control" name="addressLine2" placeholder="street..." [(ngModel)]="address.addressLine2"/>
+      </div>
+    </div>
+
+    <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="city">City<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="city" placeholder="pune etc" [(ngModel)]="address.city"/>
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="state">State/Region<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="state" placeholder="Maharashtra etc" [(ngModel)]="address.state"/>
+        </div>
+      </div>
+
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="postalCode">Zip postal code<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="postalCode" placeholder="MS" [(ngModel)]="address.postalCode"/>
+        </div>
+      </div>
+      <div class="col-md-6 padding_remove">
+        <div class="form-group">
+          <label for="country">Country<span class="req-span">*</span></label>
+          <input type="text" class="form-control" name="country" placeholder="Mumbai" [(ngModel)]="address.country"/>
+        </div>
+      </div>
+
+      <div class="action-btn-box">
+        <input type="submit" mat-button mat-dialog-close class="action-btn" value="ADD/UPDATE">
+      </div>
+      </form>
+</mat-dialog-content>
